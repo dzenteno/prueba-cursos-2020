@@ -1,0 +1,106 @@
+.navbar {
+    text-transform: uppercase;
+    color: $white;
+    background-color: $black;
+    .navbar__logo {
+        position: absolute;
+        img {
+            padding: 0.5rem 2rem;
+            width: 3rem;
+        }
+    }
+}
+
+.collapsible {
+    text-align: right;
+    label {
+        display: block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-right: 1.5em;
+        font-size: 1.8rem;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+input:checked ~ .navbar__menu {
+    max-height: 100%;
+}
+
+.navbar__btn {
+    cursor: pointer;
+}
+
+.navbar__menu {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar__item {
+    a {
+        display: block;
+        text-align: left;
+        padding: 0.5em;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .collapsible {
+        label {
+            display: none;
+        }
+    }
+    .navbar__menu {
+        max-height: 100%;
+        padding: 0.5em 3em 0.5em 0;
+        overflow: visible;
+        display: flex;
+        justify-content: flex-end;
+        .navbar__list {
+            .navbar__item {
+                margin-left: 2rem;
+            }
+            align-items: center;
+            display: inline-flex;
+            list-style: none;
+            flex-direction: row !important;
+            justify-content: flex-end;
+
+            a {
+                color: $white;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+    .navbar__list {
+        display: inline-flex;
+        list-style: none;
+        flex-direction: row !important;
+        justify-content: flex-end;
+    }
+}
+
+.navbar__list {
+    display: flex;
+    margin: inherit;
+    padding: inherit;
+    list-style: none;
+    flex-direction: column;
+}
+
+.navbar__item {
+    a {
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
