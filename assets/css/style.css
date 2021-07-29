@@ -2,6 +2,11 @@ body, ul {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -41,6 +46,9 @@ input:checked ~ .navbar__menu {
 .navbar__btn {
   cursor: pointer;
 }
+.navbar__btn:hover {
+  color: #FFAF6D;
+}
 
 .navbar__menu {
   max-height: 0;
@@ -55,6 +63,9 @@ input:checked ~ .navbar__menu {
   font-size: 1.2rem;
   font-weight: 700;
   color: #FFF;
+}
+.navbar__item a:hover {
+  color: #FFAF6D;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,6 +95,9 @@ input:checked ~ .navbar__menu {
     font-weight: 700;
     text-decoration: none;
   }
+  .navbar__menu .navbar__list a:hover {
+    color: #FFAF6D;
+  }
 
   .navbar__list {
     display: inline-flex;
@@ -102,7 +116,6 @@ input:checked ~ .navbar__menu {
 
 .navbar__item a {
   text-decoration: none;
-  padding: 0.5em 1em;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -376,6 +389,60 @@ input:checked ~ .navbar__menu {
   .col-xl-1 {
     grid-column: span 1;
   }
+}
+.header__banner {
+  text-align: center;
+}
+.header__banner img {
+  max-width: 30rem;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main__content {
+  text-align: center;
+}
+
+.main__content--left {
+  border: solid black 2px;
+}
+
+.main__content--right {
+  border: solid black 2px;
+}
+
+.main__card {
+  border: solid black 1px;
+  width: 95%;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+.main__card .main__card--title h4 {
+  margin: auto;
+  text-align: initial;
+  padding: 0 0.4rem;
+}
+.main__card .main__card--content p {
+  margin: auto;
+  text-align: justify;
+  padding: 0 0.4rem;
+}
+.main__card .main__card--autor p {
+  font-weight: 700;
+  margin: auto;
+  text-align: justify;
+  padding: 0 0.4rem;
+}
+.main__card .main__card--icon {
+  margin-left: 0.2rem;
+  text-align: start;
+}
+.main__card .main__card--icon i {
+  margin: 0 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

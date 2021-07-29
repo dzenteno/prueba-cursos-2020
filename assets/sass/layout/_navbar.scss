@@ -32,6 +32,9 @@ input:checked ~ .navbar__menu {
 
 .navbar__btn {
     cursor: pointer;
+    &:hover{
+        color: $tangerine;
+    }
 }
 
 .navbar__menu {
@@ -48,6 +51,9 @@ input:checked ~ .navbar__menu {
         font-size: 1.2rem;
         font-weight: 700;
         color: $white;
+        &:hover{
+            color: $tangerine;
+        }
     }
 }
 
@@ -77,6 +83,9 @@ input:checked ~ .navbar__menu {
                 color: $white;
                 font-weight: 700;
                 text-decoration: none;
+                &:hover{
+                    color: $tangerine;
+                }
             }
         }
     }
@@ -99,7 +108,7 @@ input:checked ~ .navbar__menu {
 .navbar__item {
     a {
         text-decoration: none;
-        padding: 0.5em 1em;
+        // padding: 0.5em 1em;
         font-size: 1rem;
         font-weight: 700;
     }

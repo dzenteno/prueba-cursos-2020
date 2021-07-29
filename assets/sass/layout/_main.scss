@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main__content {
+    text-align: center;
+}
+
+.main__content--left {
+    border: solid black 2px;
+}
+
+.main__content--right {
+    border: solid black 2px;
+}
+
+.main__card {
+    border: solid black 1px;
+    width: 95%;
+    display: inline-block;
+    margin: 0.5rem 0;
+    .main__card--title {
+        h4{
+            margin: auto;
+            text-align: initial;
+            padding: 0 0.4rem;
+        }
+    }
+    .main__card--content{
+        p{
+            margin: auto;
+            text-align: justify;
+            padding: 0 0.4rem;
+        }
+    }
+    .main__card--autor{
+        p{
+            font-weight: 700;
+            margin: auto;
+            text-align: justify;
+            padding: 0 0.4rem;
+        }
+    }
+    .main__card--icon{
+        margin-left: 0.2rem;
+        text-align: start;
+        i{
+            margin: 0 0.2rem;
+            
+        }
+    }
+}
