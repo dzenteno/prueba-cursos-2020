@@ -403,6 +403,10 @@ input:checked ~ .navbar__menu {
   justify-content: center;
 }
 
+.main__item {
+  display: inline-block;
+}
+
 .main__content {
   text-align: center;
 }
@@ -443,6 +447,34 @@ input:checked ~ .navbar__menu {
 }
 .main__card .main__card--icon i {
   margin: 0 0.2rem;
+}
+
+.main__about {
+  margin: 0.5rem;
+}
+.main__about .main__about--img img {
+  border-radius: 100%;
+  border: solid;
+  width: 10rem;
+}
+.main__about .main__about--icon i {
+  margin: 0 0.2rem;
+}
+.main__about .main__about--content {
+  margin: auto;
+  text-align: justify;
+}
+.main__about .main__about--more {
+  background-color: #2E1503;
+  color: #FFF;
+}
+
+.main__link ul {
+  text-align: start;
+}
+
+.main__gif {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
