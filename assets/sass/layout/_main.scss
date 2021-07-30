@@ -100,18 +100,6 @@
     animation-direction: alternate;
 }
 
-@keyframes mover {
-    0% {
-        transform: translateX(0rem);
-    }
-    50% {
-        transform: translateX(10rem);
-    }
-    100% {
-        transform: translateX(0rem);
-    }
-}
-
 .main__animation2 {
     animation-name: rotate;
     animation-duration: 3000ms;
@@ -119,11 +107,3 @@
     animation-timing-function: linear;
     transform-origin: 80% 80%;
 }
-@keyframes rotate { 
-    0%{ 
-        transform: rotate(0deg); 
-    }
-    100%{ 
-        transform: rotate(360deg); 
-    }
-  }

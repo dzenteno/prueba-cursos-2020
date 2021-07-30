@@ -13,6 +13,7 @@
         flex-direction: column;
         input {
             margin-bottom: 0.5rem;
+            border-radius: 0.3rem;
             &:focus {
                 background: $tangerine;
             }
@@ -45,6 +46,7 @@
             justify-content: center;
             flex-direction: row;
             input{
+                border-radius: 0.3rem;
                 margin: 0;
                 &:focus {
                     background: $tangerine;
