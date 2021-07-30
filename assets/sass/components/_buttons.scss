@@ -1,0 +1,10 @@
+.footer__btn{
+    border: none;
+    margin: 0 0.5rem;
+    background: $tangerine;
+    padding: 0.2rem 0.2rem;
+    cursor: pointer;
+    &:hover{
+        background-color: $white;
+    }
+}
